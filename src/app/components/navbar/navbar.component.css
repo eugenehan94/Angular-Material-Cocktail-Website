@@ -1,0 +1,13 @@
+.mat-toolbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Angular Material css*/
+
+mat-toolbar {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}

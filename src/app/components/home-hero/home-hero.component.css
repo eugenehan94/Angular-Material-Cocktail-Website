@@ -1,0 +1,50 @@
+.home-hero-container {
+  background-color: #3f51b5;
+  /* padding-top to allow content to be seen from fixed navbar */
+  padding-top: 200px;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+.home-hero-content-wrapper {
+  /* display: grid;
+  grid-template-columns: 1fr 1fr; */
+  display: flex;
+}
+.home-hero-inner-wrapper {
+  /* display: grid;
+  grid-template-columns: 1fr 1fr; */
+  /* grid-template-rows: 1fr 1fr; */
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+.image-border {
+  padding: 0.75rem;
+  border: solid 1px #ccc;
+  background: #fff;
+}
+
+/* Extra small devices (phones, 700px and down) */
+@media screen and (max-width: 700px) {
+  .home-hero-content-wrapper,
+  .row {
+    flex-direction: column;
+  }
+}
+
+/* Angular Material css */
+
+/* mat-card {
+  background-color: transparent;
+  box-shadow: none !important;
+} */
