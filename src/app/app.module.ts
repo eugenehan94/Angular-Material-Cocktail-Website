@@ -9,6 +9,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeHeroComponent } from './components/home-hero/home-hero.component';
 import { SidenavContentComponent } from './components/sidenav-content/sidenav-content.component';
+import { HomeFirstComponentComponent } from './components/home-first-component/home-first-component.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SidenavContentComponent } from './components/sidenav-content/sidenav-co
     HomeComponent,
     NavbarComponent,
     HomeHeroComponent,
-    SidenavContentComponent
+    SidenavContentComponent,
+    HomeFirstComponentComponent
   ],
   imports: [
     BrowserModule,
