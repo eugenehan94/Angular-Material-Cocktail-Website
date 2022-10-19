@@ -23,10 +23,25 @@
     </mat-card>
   </div>
 
-  <mat-grid-list cols="3">
-    <mat-grid-tile></mat-grid-tile>
-    <mat-grid-tile></mat-grid-tile>
-    <mat-grid-tile></mat-grid-tile>
+  <div class="home-first-title-wrapper">
+    <h1 class="home-first-component-title">What to Purchase</h1>
+    <mat-icon color="accent">keyboard_arrow_right</mat-icon>
+  </div>
+  <mat-grid-list
+    [cols]="breakpoint"
+    gutterSize="1rem"
+    (window:resize)="onResize($event)"
+  >
+    <mat-grid-tile><mat-grid-tile-header>Wine</mat-grid-tile-header>
+      <img src="../../../assets/images/WineGlasses.jpg" />
+      <mat-grid-tile-footer>The Proseccos</mat-grid-tile-footer>
+    </mat-grid-tile>
+    <mat-grid-tile>Sample</mat-grid-tile>
+    <mat-grid-tile
+      ><mat-grid-tile-header>Beer</mat-grid-tile-header
+      ><img src="../../../assets/images/StoutBeer.jpg" /><mat-grid-tile-footer
+        >Great Choices on Stout Beers</mat-grid-tile-footer
+      ></mat-grid-tile
+    >
   </mat-grid-list>
-
 </div>
