@@ -10,6 +10,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeHeroComponent } from './components/home-hero/home-hero.component';
 import { SidenavContentComponent } from './components/sidenav-content/sidenav-content.component';
 import { HomeFirstComponentComponent } from './components/home-first-component/home-first-component.component';
+import { HomeSecondComponentComponent } from './components/home-second-component/home-second-component.component';
+import { HomeThirdComponentComponent } from './components/home-third-component/home-third-component.component';
 
 @NgModule({
   declarations: [
@@ -18,13 +20,15 @@ import { HomeFirstComponentComponent } from './components/home-first-component/h
     NavbarComponent,
     HomeHeroComponent,
     SidenavContentComponent,
-    HomeFirstComponentComponent
+    HomeFirstComponentComponent,
+    HomeSecondComponentComponent,
+    HomeThirdComponentComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

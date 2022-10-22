@@ -27,21 +27,49 @@
     <h1 class="home-first-component-title">What to Purchase</h1>
     <mat-icon color="accent">keyboard_arrow_right</mat-icon>
   </div>
-  <mat-grid-list
-    [cols]="breakpoint"
-    gutterSize="1rem"
-    (window:resize)="onResize($event)"
-  >
-    <mat-grid-tile><mat-grid-tile-header>Wine</mat-grid-tile-header>
-      <img src="../../../assets/images/WineGlasses.jpg" />
-      <mat-grid-tile-footer>The Proseccos</mat-grid-tile-footer>
-    </mat-grid-tile>
-    <mat-grid-tile>Sample</mat-grid-tile>
-    <mat-grid-tile
-      ><mat-grid-tile-header>Beer</mat-grid-tile-header
-      ><img src="../../../assets/images/StoutBeer.jpg" /><mat-grid-tile-footer
-        >Great Choices on Stout Beers</mat-grid-tile-footer
-      ></mat-grid-tile
+  <div class="home-first-component-card-container">
+    <mat-card
+      ><img
+        src="../../../assets/images/WineGlasses.jpg"
+        mat-card-image
+      /><mat-card-subtitle>WINE</mat-card-subtitle
+      ><mat-card-title>The Proseccos</mat-card-title></mat-card
     >
-  </mat-grid-list>
+    <mat-card>
+      <img src="../../../assets/images/WineChoices.jpg" mat-card-image />
+      <mat-card-subtitle>WINE</mat-card-subtitle
+      ><mat-card-title>10 N/A Wines You'll Love</mat-card-title>
+    </mat-card>
+    <mat-card>
+      <img src="../../../assets/images/StoutBeer.jpg" mat-card-image />
+      <mat-card-subtitle>BEER</mat-card-subtitle>
+      <mat-card-title>Great Choices on Stout Beers</mat-card-title>
+    </mat-card>
+  </div>
+
+  <div class="home-first-title-wrapper">
+    <h1 class="home-first-component-title">For Bartenders</h1>
+    <mat-icon color="accent">keyboard_arrow_right</mat-icon>
+  </div>
+  <div class="home-first-component-card-container">
+    <mat-card
+      ><img
+        src="../../../assets/images/Peatland.jpg"
+        mat-card-image
+      /><mat-card-subtitle>SCOTCH</mat-card-subtitle
+      ><mat-card-title
+        >Exploring  Whisky on Preservation</mat-card-title
+      ></mat-card
+    >
+    <mat-card>
+      <img src="../../../assets/images/CartoonScotchOne.jpg" mat-card-image />
+      <mat-card-subtitle>WINE</mat-card-subtitle
+      ><mat-card-title>10 N/A Wines You'll Love</mat-card-title>
+    </mat-card>
+    <mat-card>
+      <img src="../../../assets/images/CartoonScotchTwo.jpg" mat-card-image />
+      <mat-card-subtitle>BEER</mat-card-subtitle>
+      <mat-card-title>Great Choices on Stout Beers</mat-card-title>
+    </mat-card>
+  </div>
 </div>

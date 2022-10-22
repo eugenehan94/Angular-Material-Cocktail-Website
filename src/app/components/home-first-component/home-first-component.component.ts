@@ -6,14 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home-first-component.component.css'],
 })
 export class HomeFirstComponentComponent implements OnInit {
-  breakpoint?: number;
+  // breakpoint?: number;
   constructor() {}
 
   ngOnInit(): void {
-    this.breakpoint = window.innerWidth <= 700 ? 1 : 3;
+    // this.breakpoint = window.innerWidth <= 700 ? 1 : 3;
   }
 
-  onResize(event: any) {
-    this.breakpoint = event.target.innerWidth <= 700 ? 1 : 3;
-  }
+  // onResize(event: any) {
+  //   this.breakpoint = event.target.innerWidth <= 700 ? 1 : 3;
+  // }
 }

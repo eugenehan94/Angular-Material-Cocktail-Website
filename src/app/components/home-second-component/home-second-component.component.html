@@ -1,0 +1,56 @@
+<div class="home-second-component-container">
+  <h2 class="home-second-component-title">The Cocktail Store</h2>
+  <!-- For contentAlignment - didn't use display: flex because the Angular Material
+  components disappears. But for display: grid it doesn't -->
+  <div [ngClass]="{ contentAlignment: getScreenWidth > 750 }">
+    <div>
+      <p>
+        We've generated a gallery of our best products, from bar tools to
+        glassware, determined from the items we use ourselves and those
+        introduced to us by the bar industry's leading top professionals.
+      </p>
+      <button mat-flat-button color="accent">VISIT STORE</button>
+    </div>
+    <div>
+      <mat-grid-list cols="1">
+        <mat-grid-tile>
+          <img src="../../../assets/images/BarTools.jpg" style="width: 100%" />
+          <mat-grid-tile-footer> Cocktail Kit $200</mat-grid-tile-footer>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </div>
+    <div>
+      <mat-grid-list cols="2" gutterSize="0.5rem">
+        <mat-grid-tile
+          ><img
+            src="../../../assets/images/SteelJigger.jpg"
+            style="width: 100%"
+          />
+          <mat-grid-tile-footer> Steel Jigger $10</mat-grid-tile-footer>
+        </mat-grid-tile>
+        <mat-grid-tile
+          ><img
+            src="../../../assets/images/CrystalRockGlass.jpg"
+            style="width: 100%"
+          /><mat-grid-tile-footer>
+            Crystal Rock Glass $35</mat-grid-tile-footer
+          ></mat-grid-tile
+        >
+        <mat-grid-tile
+          ><img
+            src="../../../assets/images/CocktailShaker.jpg"
+            style="width: 100%"
+          />
+          <mat-grid-tile-footer> Cocktail Shaker $50</mat-grid-tile-footer>
+        </mat-grid-tile>
+        <mat-grid-tile
+          ><img
+            src="../../../assets/images/MixingGlass.jpg"
+            style="width: 100%"
+          />
+          <mat-grid-tile-footer> Mixing Glass $100</mat-grid-tile-footer>
+        </mat-grid-tile>
+      </mat-grid-list>
+    </div>
+  </div>
+</div>
