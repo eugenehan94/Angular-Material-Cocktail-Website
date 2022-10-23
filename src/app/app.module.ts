@@ -12,6 +12,7 @@ import { SidenavContentComponent } from './components/sidenav-content/sidenav-co
 import { HomeFirstComponentComponent } from './components/home-first-component/home-first-component.component';
 import { HomeSecondComponentComponent } from './components/home-second-component/home-second-component.component';
 import { HomeThirdComponentComponent } from './components/home-third-component/home-third-component.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HomeThirdComponentComponent } from './components/home-third-component/h
     SidenavContentComponent,
     HomeFirstComponentComponent,
     HomeSecondComponentComponent,
-    HomeThirdComponentComponent
+    HomeThirdComponentComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

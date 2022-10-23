@@ -14,13 +14,21 @@
   text-align: center;
   margin: 0;
 }
+.home-third-card-wrapper {
+  display: flex;
+  flex-basis: 33.33333%;
+}
 mat-card {
-  margin: 1rem 0;
+  margin: 1rem;
 }
 
 @media screen and (max-width: 700px) {
   .home-third-component-title {
     text-align: center;
     margin: 0.2rem 0;
+  }
+  .home-third-card-wrapper {
+    display: flex;
+    flex-direction: column;
   }
 }
