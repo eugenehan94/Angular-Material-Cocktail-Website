@@ -3,23 +3,36 @@
   padding-left: 1.25rem;
   padding-right: 1.25rem;
 }
-.footer-upper-title, .footer-upper-text {
+.footer-upper-title,
+.footer-upper-text,
+.footer-upper-captions {
   color: #fff;
 }
 .footer-lower-container {
   background-color: rgb(234, 222, 222);
 }
-
+mat-list-item p {
+  color: #fff;
+}
 /* Extra small devices (phones, 700px and down) */
 @media screen and (max-width: 700px) {
-  .footer-upper-title, .footer-upper-text {
+  .footer-upper-title,
+  .footer-upper-text {
     text-align: center;
   }
   .footer-upper-form-wrapper {
-    display:flex;
+    display: flex;
     justify-content: center;
   }
   .footer-upper-btn-wrapper {
     margin-top: 0.6rem;
+  }
+  .footer-upper-captions {
+    margin-top: 0;
+    text-align: center;
+  }
+  .footer-upper-list-wrapper {
+    display: flex; 
+    justify-content: space-around
   }
 }
