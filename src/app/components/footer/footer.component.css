@@ -14,6 +14,9 @@
 mat-list-item p {
   color: #fff;
 }
+.footer-upper-list-wrapper {
+  display: flex;
+}
 /* Extra small devices (phones, 700px and down) */
 @media screen and (max-width: 700px) {
   .footer-upper-title,
@@ -32,7 +35,7 @@ mat-list-item p {
     text-align: center;
   }
   .footer-upper-list-wrapper {
-    display: flex; 
+    /* display: flex;  */
     justify-content: space-around
   }
 }
