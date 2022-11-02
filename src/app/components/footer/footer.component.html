@@ -11,12 +11,16 @@
           <mat-label style="color: #fff">Enter Email</mat-label>
           <input matInput value="" style="color: #fff" />
         </mat-form-field>
-
+        <!-- This <p> will disapper on small screens -->
+        <p class="footer-upper-captions" *ngIf="getScreenWidth > 700">
+          You can opt-out at any time. For more details, see our Privacy Policy
+        </p>
         <div class="footer-upper-btn-wrapper">
           <button mat-flat-button color="accent">SIGN UP</button>
         </div>
       </div>
-      <p class="footer-upper-captions">
+      <!-- This <p> will disappear to large screen -->
+      <p class="footer-upper-captions" *ngIf="getScreenWidth <= 700">
         You can opt-out at any time. For more details, see our Privacy Policy
       </p>
     </div>
@@ -44,7 +48,12 @@
   </div>
   <div class="footer-lower-container">
     <div><p>Cocktail.com is created by Eugene Han</p></div>
-    <div><p class="warning">We've updated our Privacy Policy which will go in to effect on {{year}}</p></div>
+    <div>
+      <p class="warning">
+        We've updated our Privacy Policy which will go in to effect on
+        {{ year }}
+      </p>
+    </div>
   </div>
 </div>
 

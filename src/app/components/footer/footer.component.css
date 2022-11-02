@@ -1,5 +1,10 @@
 .footer-upper-container {
   background-color: #3f51b5;
+  display: flex;
+  padding: 1rem 0;
+}
+.footer-upper-container div {
+  flex: 1;
 }
 .footer-lower-container,
 .footer-upper-container {
@@ -15,6 +20,9 @@
 .footer-upper-captions {
   color: #fff;
 }
+mat-form-field {
+  margin: 0 !important;
+}
 .footer-lower-container {
   background-color: rgb(234, 222, 222);
 }
@@ -24,11 +32,24 @@ mat-list-item p {
 .footer-upper-list-wrapper {
   display: flex;
 }
+.footer-lower-container {
+  display: flex;
+}
+.footer-lower-container div {
+  flex: 1
+}
 .footer-lower-container .warning{
   color: red;
 }
 /* Extra small devices (phones, 700px and down) */
 @media screen and (max-width: 700px) {
+  .footer-upper-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-upper-container div {
+    flex: none;
+  }
   .footer-upper-title,
   .footer-upper-text {
     text-align: center;
@@ -47,6 +68,13 @@ mat-list-item p {
   .footer-upper-list-wrapper {
     /* display: flex;  */
     justify-content: space-around;
+  }
+  .footer-lower-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-lower-container div {
+    flex: none
   }
   .footer-lower-container p{
     text-align: center;
