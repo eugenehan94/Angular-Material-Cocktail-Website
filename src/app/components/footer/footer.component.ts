@@ -16,6 +16,14 @@ export class FooterComponent implements OnInit {
     this.getScreenWidth = window.innerWidth;
   }
 
+  openPersonalWebsite(): void {
+    window.open(
+      'https://eugenehan.netlify.app/',
+      '_blank',
+      'noopener, noreferrer'
+    );
+  }
+  
   @HostListener('window:resize', ['$event'])
   onWindowResize() {
     this.getScreenWidth = window.innerWidth;

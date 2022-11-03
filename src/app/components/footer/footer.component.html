@@ -1,13 +1,13 @@
 <div>
   <div class="footer-upper-container">
     <div>
-      <h2 class="footer-upper-title">Cocktails</h2>
+      <h2 class="footer-upper-title">Cocktails.com</h2>
       <p class="footer-upper-text">
         Get our best cocktail recipes, tips, and more when you sign up for our
         newsletter.
       </p>
       <div class="footer-upper-form-wrapper">
-        <mat-form-field class="example-full-width" appearance="outline">
+        <mat-form-field class="example-full-width" appearance="fill">
           <mat-label style="color: #fff">Enter Email</mat-label>
           <input matInput value="" style="color: #fff" />
         </mat-form-field>
@@ -19,10 +19,20 @@
           <button mat-flat-button color="accent">SIGN UP</button>
         </div>
       </div>
-      <!-- This <p> will disappear to large screen -->
-      <p class="footer-upper-captions" *ngIf="getScreenWidth <= 700">
-        You can opt-out at any time. For more details, see our Privacy Policy
-      </p>
+      <!-- This <div> will disappear to large screen -->
+      <div>
+        <p class="footer-upper-captions" *ngIf="getScreenWidth <= 700">
+          You can opt-out at any time. For more details, see our Privacy Policy
+        </p>
+        <mat-grid-list cols="5">
+          <mat-grid-tile> <mat-icon>public</mat-icon> </mat-grid-tile>
+          <mat-grid-tile> <mat-icon>school</mat-icon> </mat-grid-tile>
+          <mat-grid-tile> <mat-icon>location_city</mat-icon></mat-grid-tile>
+          <mat-grid-tile><mat-icon>cake</mat-icon> </mat-grid-tile>
+          <mat-grid-tile><mat-icon>whatshot</mat-icon></mat-grid-tile>
+        </mat-grid-list>
+        <hr *ngIf="getScreenWidth <= 700" />
+      </div>
     </div>
     <div class="footer-upper-list-wrapper">
       <mat-list>
@@ -41,16 +51,29 @@
         <mat-list-item><p>Career</p></mat-list-item>
         <mat-list-item><p>Guidelines</p></mat-list-item>
         <mat-list-item><p>Privacy Policy</p></mat-list-item>
-        <mat-list-item><p>Advertise</p></mat-list-item>
-        <mat-list-item><p>Contact</p></mat-list-item>
+        <mat-list-item>
+          <img
+            src="../../../assets/svg/privacy.svg"
+            alt="privacy feedback"
+            style="width: 100px; height: 100px"
+        /></mat-list-item>
       </mat-list>
     </div>
   </div>
   <div class="footer-lower-container">
-    <div><p>Cocktail.com is created by Eugene Han</p></div>
+    <div>
+      <p>
+        Cocktail.com is created by
+        <span class="footer-personal-link" (click)="openPersonalWebsite()"
+          >Eugene Han</span
+        >
+      </p>
+    </div>
     <div>
       <p class="warning">
-        We've updated our Privacy Policy which will go in to effect on
+        We've updated our
+        <span class="footer-privacy-policy">Privacy Policy</span> which will go
+        in to effect on
         {{ year }}
       </p>
     </div>
