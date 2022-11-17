@@ -24,12 +24,25 @@
         <p class="footer-upper-captions" *ngIf="getScreenWidth <= 700">
           You can opt-out at any time. For more details, see our Privacy Policy
         </p>
-        <mat-grid-list cols="5">
-          <mat-grid-tile> <mat-icon>public</mat-icon> </mat-grid-tile>
-          <mat-grid-tile> <mat-icon>school</mat-icon> </mat-grid-tile>
-          <mat-grid-tile> <mat-icon>location_city</mat-icon></mat-grid-tile>
-          <mat-grid-tile><mat-icon>cake</mat-icon> </mat-grid-tile>
-          <mat-grid-tile><mat-icon>whatshot</mat-icon></mat-grid-tile>
+        <!-- Refer to bottom (scroll down) for mat-grid-tile setup -->
+        <mat-grid-list cols="5" class="footer-upper-icon-wrapper">
+          <mat-grid-tile>
+            <div>
+              <mat-icon>public</mat-icon>
+            </div>
+          </mat-grid-tile>
+          <mat-grid-tile>
+            <div><mat-icon>school</mat-icon></div></mat-grid-tile
+          >
+          <mat-grid-tile>
+            <div><mat-icon>location_city</mat-icon></div></mat-grid-tile
+          >
+          <mat-grid-tile
+            ><div><mat-icon>cake</mat-icon></div></mat-grid-tile
+          >
+          <mat-grid-tile
+            ><div><mat-icon>whatshot</mat-icon></div></mat-grid-tile
+          >
         </mat-grid-list>
         <hr *ngIf="getScreenWidth <= 700" />
       </div>
@@ -82,3 +95,7 @@
 
 <!-- With mat-list: to make two column: -->
 <!-- https://stackoverflow.com/questions/58833607/using-angular-list-with-two-columns -->
+
+<!-- for mat-grid-list, for each mat-grid-tile we add a div to prevent
+messing with the mat-grid-tile styles -->
+<!-- https://stackoverflow.com/questions/61539051/i-am-unable-to-customize-the-style-property-with-mat-grid-tile-of-angular-materi-->

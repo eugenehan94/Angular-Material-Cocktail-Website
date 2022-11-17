@@ -26,17 +26,20 @@
 mat-form-field {
   margin: 0 !important;
 }
-.footer-lower-container {
-  background-color: rgb(234, 222, 222);
-}
+
 mat-list-item p {
   color: #fff;
 }
 .footer-upper-list-wrapper {
   display: flex;
+  justify-content: space-evenly;
 }
 mat-icon {
   color: #fff;
+}
+
+.footer-lower-container {
+  background-color: rgb(234, 222, 222);
 }
 .footer-lower-container {
   display: flex;
