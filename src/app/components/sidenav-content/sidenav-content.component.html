@@ -1,11 +1,18 @@
-<div>
-  <div>
+<div class="sidenav-container">
+  <div class="sidenav-upper-heading">
     <mat-icon (click)="toggleSidenav(false)">close</mat-icon>
+    <h1>Cocktails</h1>
   </div>
   <mat-divider></mat-divider>
-  <mat-list>
-    <mat-list-item role="listitem"><a routerLink="home">Home</a></mat-list-item>
-    <mat-list-item role="listitem"><a routerLink="home">Home</a></mat-list-item>
-    <mat-list-item role="listitem"><a routerLink="home">Home</a></mat-list-item>
-  </mat-list>
+  <mat-list-item><h2>SPIRITS</h2></mat-list-item>
+  <mat-nav-list>
+    <a mat-list-item>Bourbon</a>
+    <a mat-list-item>Brandy</a>
+    <a mat-list-item>Gin</a>
+    <a mat-list-item>Liqueur</a>
+    <a mat-list-item>Rum</a>
+    <a mat-list-item>Rye Whiskey</a>
+    <a mat-list-item>Scotch</a>
+    <a mat-list-item>Other</a>
+  </mat-nav-list>
 </div>

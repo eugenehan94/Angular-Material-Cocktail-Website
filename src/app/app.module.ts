@@ -13,6 +13,7 @@ import { HomeFirstComponentComponent } from './components/home-first-component/h
 import { HomeSecondComponentComponent } from './components/home-second-component/home-second-component.component';
 import { HomeThirdComponentComponent } from './components/home-third-component/home-third-component.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { BourbonComponent } from './pages/bourbon/bourbon.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { FooterComponent } from './components/footer/footer.component';
     HomeFirstComponentComponent,
     HomeSecondComponentComponent,
     HomeThirdComponentComponent,
-    FooterComponent
+    FooterComponent,
+    BourbonComponent
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,7 @@
 <mat-sidenav-container>
-  <mat-sidenav [(opened)]="sidenavState" mode="over"
+  <!-- fixedInViewport prevents the sidenav drawer from 
+    scrolling down when moving the outside scrollbar, if the sidenav scroll is available -->
+  <mat-sidenav fixedInViewport="true" [(opened)]="sidenavState" mode="over"
     ><app-sidenav-content (closeSidenav)="closeSidenav()"></app-sidenav-content
   ></mat-sidenav>
   <mat-sidenav-content>

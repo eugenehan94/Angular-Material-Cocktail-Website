@@ -21,7 +21,10 @@
 mat-card {
   margin: 1rem;
 }
-
+mat-card-subtitle {
+  color: #9d2a2c;
+  font-weight: bold;
+}
 @media screen and (max-width: 700px) {
   .home-third-component-title {
     text-align: center;

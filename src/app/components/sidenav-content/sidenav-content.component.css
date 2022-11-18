@@ -1,0 +1,28 @@
+.sidenav-container {
+    padding: 20px;
+}
+.sidenav-upper-heading {
+    display:flex;
+    align-items: center;
+}
+mat-icon {
+    cursor: pointer;
+}
+.sidenav-upper-heading h1 {
+    margin: 0;
+    margin-left: 10px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+mat-list-item h2 {
+    margin: 0;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #ce7c2e;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
