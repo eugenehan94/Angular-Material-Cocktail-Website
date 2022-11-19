@@ -1,0 +1,80 @@
+.bourbon-container {
+  /* padding-top to allow content to be seen from fixed navbar */
+  padding-top: 80px;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+.home-link {
+  color: #a45241;
+}
+.bourbon-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.bourbon-intro h1 {
+  color: #a45241;
+  font-weight: bold;
+}
+.bourbon-intro p {
+  text-align: center;
+}
+.bourbon-card-container {
+  display: flex;
+  /* flex-basis: 33.333% allows three in a row */
+  flex-basis: 33.33333%;
+  margin-top: 1rem;
+}
+.bourbon-card-container mat-card {
+  margin: 1rem;
+}
+mat-card-subtitle {
+  color: #9d2a2c;
+  font-weight: bold;
+}
+.bourbon-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bourbon-content-wrapper p {
+  text-align: center;
+  border-bottom: 2px dotted #a45241;
+}
+.bourbon-sidecard-wrapper {
+  display: flex;
+  flex-basis: 33%;
+  justify-content: space-evenly;
+}
+.bourbon-sidecard {
+  display: flex;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin: 2rem 0;
+  border-radius: 5px;
+}
+.bourbon-sidecard-content {
+  padding: 0.5rem;
+}
+.bourbon-sidecard-content h4 {
+  color: #a45241;
+  font-weight: bold;
+}
+.bourbon-sidecard-content h5 {
+  font-weight: bold;
+}
+/* Extra small devices (phones, 700px and down) */
+@media screen and (max-width: 700px) {
+  .bourbon-card-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+  .bourbon-sidecard-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .bourbon-sidecard {
+    margin: 1rem 0;
+  }
+}
