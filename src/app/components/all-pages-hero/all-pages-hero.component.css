@@ -1,0 +1,23 @@
+.all-pages-hero-container {
+  /* padding-top to allow content to be seen from fixed navbar */
+  padding-top: 80px;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-bottom: 50px;
+}
+.home-link {
+  color: #a45241;
+}
+.all-pages-hero-intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.all-pages-hero-intro h1 {
+  color: #a45241;
+  font-weight: bold;
+}
+.all-pages-hero-intro p {
+  text-align: center;
+}

@@ -3,6 +3,7 @@
   padding-top: 80px;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+  padding-bottom: 50px;
 }
 .home-link {
   color: #a45241;
@@ -45,7 +46,7 @@ mat-card-subtitle {
 .bourbon-sidecard-wrapper {
   display: flex;
   flex-basis: 33%;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 .bourbon-sidecard {
   display: flex;
@@ -62,6 +63,9 @@ mat-card-subtitle {
 }
 .bourbon-sidecard-content h5 {
   font-weight: bold;
+}
+mat-grid-list {
+  margin-bottom: 10px;
 }
 /* Extra small devices (phones, 700px and down) */
 @media screen and (max-width: 700px) {

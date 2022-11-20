@@ -15,6 +15,13 @@ import { HomeThirdComponentComponent } from './components/home-third-component/h
 import { FooterComponent } from './components/footer/footer.component';
 import { BourbonComponent } from './pages/bourbon/bourbon.component';
 import { BourbonHeroComponent } from './components/bourbon-hero/bourbon-hero.component';
+import { BrandyComponent } from './pages/brandy/brandy.component';
+import { AllPagesHeroComponent } from './components/all-pages-hero/all-pages-hero.component';
+import { GinComponent } from './pages/gin/gin.component';
+import { LiqueurComponent } from './pages/liqueur/liqueur.component';
+import { RumComponent } from './pages/rum/rum.component';
+import { RyeWhiskeyComponent } from './pages/rye-whiskey/rye-whiskey.component';
+import { ScotchComponent } from './pages/scotch/scotch.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +35,14 @@ import { BourbonHeroComponent } from './components/bourbon-hero/bourbon-hero.com
     HomeThirdComponentComponent,
     FooterComponent,
     BourbonComponent,
-    BourbonHeroComponent
+    BourbonHeroComponent,
+    BrandyComponent,
+    AllPagesHeroComponent,
+    GinComponent,
+    LiqueurComponent,
+    RumComponent,
+    RyeWhiskeyComponent,
+    ScotchComponent 
   ],
   imports: [
     BrowserModule,
