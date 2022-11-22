@@ -52,7 +52,17 @@
             <mat-label>Enter your email</mat-label>
             <input matInput />
           </mat-form-field>
-          <button mat-flat-button color="accent">Sign Up</button>
+          <!-- Note: In openSnackBar, we are getting the button text "Sign Up" -->
+          <button
+            mat-flat-button
+            color="accent"
+            #button
+            (click)="
+              openSnackBar(button._elementRef.nativeElement.textContent)
+            "
+          >
+            Sign Up
+          </button>
           <p style="color: #fff">
             You can opt-out at any time. For more details, see our Privacy
             Policy

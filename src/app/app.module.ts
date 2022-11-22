@@ -14,7 +14,6 @@ import { HomeSecondComponentComponent } from './components/home-second-component
 import { HomeThirdComponentComponent } from './components/home-third-component/home-third-component.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { BourbonComponent } from './pages/bourbon/bourbon.component';
-import { BourbonHeroComponent } from './components/bourbon-hero/bourbon-hero.component';
 import { BrandyComponent } from './pages/brandy/brandy.component';
 import { AllPagesHeroComponent } from './components/all-pages-hero/all-pages-hero.component';
 import { GinComponent } from './pages/gin/gin.component';
@@ -22,6 +21,9 @@ import { LiqueurComponent } from './pages/liqueur/liqueur.component';
 import { RumComponent } from './pages/rum/rum.component';
 import { RyeWhiskeyComponent } from './pages/rye-whiskey/rye-whiskey.component';
 import { ScotchComponent } from './pages/scotch/scotch.component';
+import { AllPagesFirstComponentComponent } from './components/all-pages-first-component/all-pages-first-component.component';
+import { AllPagesSecondComponentComponent } from './components/all-pages-second-component/all-pages-second-component.component';
+import { AllPagesThirdComponentComponent } from './components/all-pages-third-component/all-pages-third-component.component';
 
 @NgModule({
   declarations: [
@@ -35,14 +37,16 @@ import { ScotchComponent } from './pages/scotch/scotch.component';
     HomeThirdComponentComponent,
     FooterComponent,
     BourbonComponent,
-    BourbonHeroComponent,
     BrandyComponent,
     AllPagesHeroComponent,
     GinComponent,
     LiqueurComponent,
     RumComponent,
     RyeWhiskeyComponent,
-    ScotchComponent 
+    ScotchComponent,
+    AllPagesFirstComponentComponent,
+    AllPagesSecondComponentComponent,
+    AllPagesThirdComponentComponent 
   ],
   imports: [
     BrowserModule,

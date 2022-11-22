@@ -14,6 +14,9 @@ mat-icon {
     font-weight: bold;
     letter-spacing: 5px;
 }
+.sidenav-upper-heading h1:hover {
+    cursor: pointer;
+}
 mat-list-item h2 {
     margin: 0;
     margin-top: 20px;

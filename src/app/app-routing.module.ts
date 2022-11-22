@@ -11,18 +11,24 @@ import { ScotchComponent } from './pages/scotch/scotch.component';
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
-  { path: 'bourbon', component: BourbonComponent},
-  { path: 'brandy', component: BrandyComponent},
-  { path: 'gin', component: GinComponent},
-  { path: 'liqueur', component: LiqueurComponent},
-  { path: 'rum', component: RumComponent},
-  { path: 'rye whiskey', component: RyeWhiskeyComponent},
-  { path: 'scotch', component: ScotchComponent}
+  { path: 'bourbon', component: BourbonComponent },
+  { path: 'brandy', component: BrandyComponent },
+  { path: 'gin', component: GinComponent },
+  { path: 'liqueur', component: LiqueurComponent },
+  { path: 'rum', component: RumComponent },
+  { path: 'rye whiskey', component: RyeWhiskeyComponent },
+  { path: 'scotch', component: ScotchComponent },
 ];
 
 @NgModule({
-  // Note: Use the useHash: true for Github pages
-  imports: [RouterModule.forRoot(routes, { useHash: true })],
+  // Note: Use the useHash: true for Github pages.
+  // Note: scrollPositionRestoration: top - Each page will be scrolled to the top on router change
+  imports: [
+    RouterModule.forRoot(routes, {
+      scrollPositionRestoration: 'top',
+      useHash: true,
+    }),
+  ],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}

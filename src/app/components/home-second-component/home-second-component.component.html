@@ -9,7 +9,14 @@
         glassware, determined from the items we use ourselves and those
         introduced to us by the bar industry's leading top professionals.
       </p>
-      <button mat-flat-button color="accent">VISIT STORE</button>
+      <button
+        mat-flat-button
+        color="accent"
+        #button
+        (click)="openSnackBar(button._elementRef.nativeElement.textContent)"
+      >
+        VISIT STORE
+      </button>
     </div>
     <div>
       <mat-grid-list cols="1">

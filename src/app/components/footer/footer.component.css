@@ -39,7 +39,7 @@ mat-icon {
 }
 
 .footer-lower-container {
-  background-color: rgb(234, 222, 222);
+  background-color: rgb(255, 255, 255);
 }
 .footer-lower-container {
   display: flex;
@@ -61,6 +61,7 @@ mat-icon {
 .footer-privacy-policy:hover {
   cursor: pointer;
 }
+
 /* Extra small devices (phones, 700px and down) */
 @media screen and (max-width: 700px) {
   .footer-upper-container {
@@ -98,5 +99,13 @@ mat-icon {
   }
   .footer-lower-container p {
     text-align: center;
+  }
+  .footer-lower-left-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-lower-left-image-wrapper {
+    display: flex;
+    justify-content: center;
   }
 }
