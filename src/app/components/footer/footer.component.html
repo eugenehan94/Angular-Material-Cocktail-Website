@@ -16,7 +16,14 @@
           You can opt-out at any time. For more details, see our Privacy Policy
         </p>
         <div class="footer-upper-btn-wrapper">
-          <button mat-flat-button color="accent">SIGN UP</button>
+          <button
+            mat-flat-button
+            color="accent"
+            #button
+            (click)="openSnackBar(button._elementRef.nativeElement.textContent)"
+          >
+            SIGN UP
+          </button>
         </div>
       </div>
       <!-- This <div> will disappear to large screen -->

@@ -25,6 +25,7 @@ import { AllPagesFirstComponentComponent } from './components/all-pages-first-co
 import { AllPagesSecondComponentComponent } from './components/all-pages-second-component/all-pages-second-component.component';
 import { AllPagesThirdComponentComponent } from './components/all-pages-third-component/all-pages-third-component.component';
 
+import { HttpClientModule } from '@angular/common/http'
 @NgModule({
   declarations: [
     AppComponent,
@@ -53,6 +54,7 @@ import { AllPagesThirdComponentComponent } from './components/all-pages-third-co
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

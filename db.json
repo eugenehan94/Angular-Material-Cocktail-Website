@@ -1,0 +1,42 @@
+{
+  "FirstComponentCardOne": [
+    {
+      "id": "1",
+      "src": "../../../assets/images/StormKing.jpg",
+      "subtitle": "SCOTCH COCKTAILS",
+      "title": "Storm King"
+    },
+    {
+      "id": "2",
+      "src": "../../../assets/images/RobRoy.jpg",
+      "subtitle": "SCOTCH COCKTAILS",
+      "title": "Rob Roy"
+    },
+    {
+      "id": "3",
+      "src": "../../../assets/images/WhiskyInChurch.jpg",
+      "subtitle": "SMOKY",
+      "title": "Whisky in Church"
+    }
+  ],
+  "FirstComponentCardTwo": [
+    {
+      "id": "1",
+      "src": "../../../assets/images/WineGlasses.jpg",
+      "subtitle": "WINE",
+      "title": "The Proseccos"
+    },
+    {
+      "id": "2",
+      "src": "../../../assets/images/WineChoices.jpg",
+      "subtitle": "WINE",
+      "title": "10 N/A Wines You'll Love"
+    },
+    {
+      "id": "3",
+      "src": "../../../assets/images/StoutBeer.jpg",
+      "subtitle": "BEER",
+      "title": "Great Choices on Stout Beers"
+    }
+  ]
+}

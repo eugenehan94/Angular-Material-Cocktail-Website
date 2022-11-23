@@ -7,11 +7,15 @@ import { MatSnackBar } from '@angular/material/snack-bar';
   styleUrls: ['./home-hero.component.css'],
 })
 export class HomeHeroComponent implements OnInit {
-  constructor(private _snackBar: MatSnackBar) {}
+  constructor(private _snackBar: MatSnackBar ) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+
+  }
 
   openSnackBar(message: string) {
     this._snackBar.open(message +" Button Clicked", 'X', { duration: 3000 });
   }
+
+
 }

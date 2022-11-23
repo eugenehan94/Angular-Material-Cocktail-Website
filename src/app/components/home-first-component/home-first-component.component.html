@@ -3,23 +3,12 @@
     <h1 class="home-first-component-title">The Rob Roy and Riffs</h1>
     <mat-icon color="accent">keyboard_arrow_right</mat-icon>
   </div>
+
   <div class="home-first-component-card-container">
-    <mat-card
-      ><img
-        src="../../../assets/images/StormKing.jpg"
-        mat-card-image
-      /><mat-card-subtitle>SCOTCH COCKTAILS</mat-card-subtitle
-      ><mat-card-title>Storm King</mat-card-title></mat-card
-    >
-    <mat-card>
-      <img src="../../../assets/images/RobRoy.jpg" mat-card-image />
-      <mat-card-subtitle>SCOTCH COCKTAILS</mat-card-subtitle
-      ><mat-card-title>Rob Roy</mat-card-title>
-    </mat-card>
-    <mat-card>
-      <img src="../../../assets/images/WhiskyInChurch.jpg" mat-card-image />
-      <mat-card-subtitle>SMOKY</mat-card-subtitle>
-      <mat-card-title>Whisky in Church</mat-card-title>
+    <mat-card *ngFor="let data of firstCardContent">
+      <img src="{{ data.src }}" mat-card-image />
+      <mat-card-subtitle>{{ data.subtitle }}</mat-card-subtitle>
+      <mat-card-title>{{ data.title }}</mat-card-title>
     </mat-card>
   </div>
 
@@ -28,7 +17,12 @@
     <mat-icon color="accent">keyboard_arrow_right</mat-icon>
   </div>
   <div class="home-first-component-card-container">
-    <mat-card
+    <mat-card *ngFor="let data of secondCardContent">
+      <img src="{{ data.src }}" mat-card-image />
+      <mat-card-subtitle>{{ data.subtitle }}</mat-card-subtitle>
+      <mat-card-title>{{ data.title }}</mat-card-title>
+    </mat-card>
+    <!-- <mat-card
       ><img
         src="../../../assets/images/WineGlasses.jpg"
         mat-card-image
@@ -44,7 +38,7 @@
       <img src="../../../assets/images/StoutBeer.jpg" mat-card-image />
       <mat-card-subtitle>BEER</mat-card-subtitle>
       <mat-card-title>Great Choices on Stout Beers</mat-card-title>
-    </mat-card>
+    </mat-card> -->
   </div>
 
   <div class="home-first-title-wrapper">
@@ -58,7 +52,7 @@
         mat-card-image
       /><mat-card-subtitle>SCOTCH</mat-card-subtitle
       ><mat-card-title
-        >Exploring  Whisky on Preservation</mat-card-title
+        >Exploring Whisky on Preservation</mat-card-title
       ></mat-card
     >
     <mat-card>
