@@ -25,7 +25,9 @@ import { AllPagesFirstComponentComponent } from './components/all-pages-first-co
 import { AllPagesSecondComponentComponent } from './components/all-pages-second-component/all-pages-second-component.component';
 import { AllPagesThirdComponentComponent } from './components/all-pages-third-component/all-pages-third-component.component';
 
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { ErrorCardComponent } from './components/error-card/error-card.component';
+import { LoadingCardComponent } from './components/loading-card/loading-card.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,7 +49,9 @@ import { HttpClientModule } from '@angular/common/http'
     ScotchComponent,
     AllPagesFirstComponentComponent,
     AllPagesSecondComponentComponent,
-    AllPagesThirdComponentComponent 
+    AllPagesThirdComponentComponent,
+    ErrorCardComponent,
+    LoadingCardComponent 
   ],
   imports: [
     BrowserModule,

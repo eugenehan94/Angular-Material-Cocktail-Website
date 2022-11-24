@@ -38,5 +38,45 @@
       "subtitle": "BEER",
       "title": "Great Choices on Stout Beers"
     }
+  ],
+  "FirstComponentCardThree": [
+    {
+      "id": "1",
+      "src": "../../../assets/images/Peatland.jpg",
+      "subtitle": "SCOTCH",
+      "title": "Exploring Whisky on Preservation"
+    },
+    {
+      "id": "2",
+      "src": "../../../assets/images/CartoonScotchOne.jpg",
+      "subtitle": "WINE",
+      "title": "10 N/A Wines You'll Love"
+    },
+    {
+      "id": "3",
+      "src": "../../../assets/images/CartoonScotchTwo.jpg",
+      "subtitle": "BEER",
+      "title": "Great Choices on Stout Beers"
+    }
+  ],
+  "ThirdComponentCard": [
+    {
+      "id": "1",
+      "src": "../../../assets/images/PumpkinToddy.jpg",
+      "subtitle": "BOURBON COCKTAILS",
+      "title": "Pumpkin Toddy"
+    },
+    {
+      "id": "2",
+      "src": "../../../assets/images/PumpkinSazarac.jpg",
+      "subtitle": "COGNAC",
+      "title": "Pumpkin Sazarac"
+    },
+    {
+      "id": "3",
+      "src": "../../../assets/images/PumpkinBuck.jpg",
+      "subtitle": "COGNAC",
+      "title": "Pumpkin Buck"
+    }
   ]
 }

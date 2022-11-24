@@ -1,0 +1,10 @@
+.error-card-content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+mat-icon {
+  color: rgb(255, 0, 0);
+  margin-right: 10px;
+}

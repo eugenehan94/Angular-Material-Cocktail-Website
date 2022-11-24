@@ -4,7 +4,12 @@
     <mat-icon color="accent">keyboard_arrow_right</mat-icon>
   </div>
   <div class="home-third-card-wrapper">
-    <mat-card>
+    <mat-card *ngFor="let data of cardContent">
+      <img src="{{ data.src }}" alt="{{ data.title }}" mat-card-image />
+      <mat-card-subtitle>{{ data.subtitle }}</mat-card-subtitle>
+      <mat-card-title>{{ data.title }}</mat-card-title>
+    </mat-card>
+    <!-- <mat-card>
       <img src="../../../assets/images/PumpkinToddy.jpg" mat-card-image />
       <mat-card-subtitle>BOURBON COCKTAILS</mat-card-subtitle>
       <mat-card-title>Pumpkin Toddy</mat-card-title>
@@ -18,6 +23,6 @@
       <img src="../../../assets/images/PumpkinBuck.jpg" mat-card-image />
       <mat-card-subtitle>COGNAC</mat-card-subtitle>
       <mat-card-title>Pumpkin Buck</mat-card-title>
-    </mat-card>
+    </mat-card> -->
   </div>
 </div>

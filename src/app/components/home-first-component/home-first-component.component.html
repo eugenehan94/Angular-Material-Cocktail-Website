@@ -4,12 +4,22 @@
     <mat-icon color="accent">keyboard_arrow_right</mat-icon>
   </div>
 
+  <!-- This is the loader for the block of code below -->
+  <div *ngIf="!firstCardContentLoaded">
+    <app-loading-card></app-loading-card>
+  </div>
+
   <div class="home-first-component-card-container">
     <mat-card *ngFor="let data of firstCardContent">
-      <img src="{{ data.src }}" mat-card-image />
+      <img src="{{ data.src }}" alt="{{ data.title }}" mat-card-image />
       <mat-card-subtitle>{{ data.subtitle }}</mat-card-subtitle>
       <mat-card-title>{{ data.title }}</mat-card-title>
     </mat-card>
+  </div>
+
+  <!-- This is the error for the block of code above -->
+  <div *ngIf="firstCardContentError">
+    <app-error-card></app-error-card>
   </div>
 
   <div class="home-first-title-wrapper">
@@ -18,27 +28,15 @@
   </div>
   <div class="home-first-component-card-container">
     <mat-card *ngFor="let data of secondCardContent">
-      <img src="{{ data.src }}" mat-card-image />
+      <img src="{{ data.src }}" alt="{{ data.title }}" mat-card-image />
       <mat-card-subtitle>{{ data.subtitle }}</mat-card-subtitle>
       <mat-card-title>{{ data.title }}</mat-card-title>
     </mat-card>
-    <!-- <mat-card
-      ><img
-        src="../../../assets/images/WineGlasses.jpg"
-        mat-card-image
-      /><mat-card-subtitle>WINE</mat-card-subtitle
-      ><mat-card-title>The Proseccos</mat-card-title></mat-card
-    >
-    <mat-card>
-      <img src="../../../assets/images/WineChoices.jpg" mat-card-image />
-      <mat-card-subtitle>WINE</mat-card-subtitle
-      ><mat-card-title>10 N/A Wines You'll Love</mat-card-title>
-    </mat-card>
-    <mat-card>
-      <img src="../../../assets/images/StoutBeer.jpg" mat-card-image />
-      <mat-card-subtitle>BEER</mat-card-subtitle>
-      <mat-card-title>Great Choices on Stout Beers</mat-card-title>
-    </mat-card> -->
+  </div>
+
+  <!-- This is the error for the block of code above -->
+  <div *ngIf="secondCardContentError">
+    <app-error-card></app-error-card>
   </div>
 
   <div class="home-first-title-wrapper">
@@ -46,7 +44,12 @@
     <mat-icon color="accent">keyboard_arrow_right</mat-icon>
   </div>
   <div class="home-first-component-card-container">
-    <mat-card
+    <mat-card *ngFor="let data of thirdCardContent">
+      <img src="{{ data.src }}" alt="{{ data.title }}" mat-card-image />
+      <mat-card-subtitle>{{ data.subtitle }}</mat-card-subtitle>
+      <mat-card-title>{{ data.title }}</mat-card-title>
+    </mat-card>
+    <!-- <mat-card
       ><img
         src="../../../assets/images/Peatland.jpg"
         mat-card-image
@@ -64,6 +67,6 @@
       <img src="../../../assets/images/CartoonScotchTwo.jpg" mat-card-image />
       <mat-card-subtitle>BEER</mat-card-subtitle>
       <mat-card-title>Great Choices on Stout Beers</mat-card-title>
-    </mat-card>
+    </mat-card> -->
   </div>
 </div>

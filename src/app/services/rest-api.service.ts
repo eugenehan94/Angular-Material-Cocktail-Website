@@ -12,4 +12,10 @@ export class RestApiService {
   getFirstComponentCardTwo() {
     return this.http.get('http://localhost:3000/FirstComponentCardTwo');
   }
+  getFirstComponentCardThree() {
+    return this.http.get('http://localhost:3000/FirstComponentCardThree');
+  }
+  getThirdComponentCard() {
+    return this.http.get('http://localhost:3000/ThirdComponentCard');
+  }
 }
