@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./scotch.component.css']
 })
 export class ScotchComponent implements OnInit {
-
+  pageTitle: string = "Scotch";
   constructor() { }
 
   ngOnInit(): void {

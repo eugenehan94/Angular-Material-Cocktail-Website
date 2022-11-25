@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./rum.component.css']
 })
 export class RumComponent implements OnInit {
-
+  pageTitle: string = "Rum"
   constructor() { }
 
   ngOnInit(): void {

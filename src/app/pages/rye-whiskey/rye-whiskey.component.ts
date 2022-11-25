@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./rye-whiskey.component.css']
 })
 export class RyeWhiskeyComponent implements OnInit {
-
+  pageTitle: string = "Rye Whiskey"
   constructor() { }
 
   ngOnInit(): void {

@@ -26,6 +26,10 @@
     <h1 class="home-first-component-title">What to Purchase</h1>
     <mat-icon color="accent">keyboard_arrow_right</mat-icon>
   </div>
+  <!-- This is the loader for the block of code below -->
+  <div *ngIf="!secondCardContentLoaded">
+    <app-loading-card></app-loading-card>
+  </div>
   <div class="home-first-component-card-container">
     <mat-card *ngFor="let data of secondCardContent">
       <img src="{{ data.src }}" alt="{{ data.title }}" mat-card-image />
@@ -33,7 +37,6 @@
       <mat-card-title>{{ data.title }}</mat-card-title>
     </mat-card>
   </div>
-
   <!-- This is the error for the block of code above -->
   <div *ngIf="secondCardContentError">
     <app-error-card></app-error-card>
@@ -43,30 +46,18 @@
     <h1 class="home-first-component-title">For Bartenders</h1>
     <mat-icon color="accent">keyboard_arrow_right</mat-icon>
   </div>
+  <!-- This is the loader for the block of code below -->
+  <div *ngIf="!thirdCardContentLoaded">
+    <app-loading-card></app-loading-card>
+  </div>
   <div class="home-first-component-card-container">
     <mat-card *ngFor="let data of thirdCardContent">
       <img src="{{ data.src }}" alt="{{ data.title }}" mat-card-image />
       <mat-card-subtitle>{{ data.subtitle }}</mat-card-subtitle>
       <mat-card-title>{{ data.title }}</mat-card-title>
     </mat-card>
-    <!-- <mat-card
-      ><img
-        src="../../../assets/images/Peatland.jpg"
-        mat-card-image
-      /><mat-card-subtitle>SCOTCH</mat-card-subtitle
-      ><mat-card-title
-        >Exploring Whisky on Preservation</mat-card-title
-      ></mat-card
-    >
-    <mat-card>
-      <img src="../../../assets/images/CartoonScotchOne.jpg" mat-card-image />
-      <mat-card-subtitle>WINE</mat-card-subtitle
-      ><mat-card-title>10 N/A Wines You'll Love</mat-card-title>
-    </mat-card>
-    <mat-card>
-      <img src="../../../assets/images/CartoonScotchTwo.jpg" mat-card-image />
-      <mat-card-subtitle>BEER</mat-card-subtitle>
-      <mat-card-title>Great Choices on Stout Beers</mat-card-title>
-    </mat-card> -->
+  </div>
+  <div *ngIf="thirdCardContentError">
+    <app-error-card></app-error-card>
   </div>
 </div>

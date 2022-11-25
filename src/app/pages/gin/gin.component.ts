@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./gin.component.css']
 })
 export class GinComponent implements OnInit {
-
+  pageTitle: string = "Gin";
   constructor() { }
 
   ngOnInit(): void {

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Router } from '@angular/router';
 @Component({
   selector: 'app-all-pages-hero',
@@ -6,15 +6,16 @@ import { Router } from '@angular/router';
   styleUrls: ['./all-pages-hero.component.css'],
 })
 export class AllPagesHeroComponent implements OnInit {
-  title?: string;
+
+  @Input() title?: string;
 
   constructor(private router: Router) {}
 
   ngOnInit(): void {
-    // router.url returns /url - remove the /, then remove %20(this occurs when there is a space)
-    const routerUrl = this.router.url.substring(1).replace(/%20/, " ")
-    // then capitalize the first letter and attach the rest
-    this.title = routerUrl.charAt(0).toUpperCase() + routerUrl.slice(1)
+    // // router.url returns /url - remove the /, then remove %20(this occurs when there is a space)
+    // const routerUrl = this.router.url.substring(1).replace(/%20/, " ")
+    // // then capitalize the first letter and attach the rest
+    // this.title = routerUrl.charAt(0).toUpperCase() + routerUrl.slice(1)
   }
 }
 

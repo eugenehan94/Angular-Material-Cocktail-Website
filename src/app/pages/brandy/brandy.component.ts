@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./brandy.component.css']
 })
 export class BrandyComponent implements OnInit {
-
+  pageTitle: string = "Brandy"
   constructor() { }
 
   ngOnInit(): void {

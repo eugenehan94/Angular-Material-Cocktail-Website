@@ -1,4 +1,7 @@
+mat-card {
+  margin: 10px 0;
+}
 .loading-card-spinner-wrapper {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }

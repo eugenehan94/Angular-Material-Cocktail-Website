@@ -12,10 +12,14 @@ export class HomeFirstComponentComponent implements OnInit {
   firstCardContent: any;
   firstCardContentError: boolean = false;
 
+  secondCardContentLoaded: boolean = false;
   secondCardContent: any;
   secondCardContentError: boolean = false;
 
+  thirdCardContentLoaded: boolean = false;
   thirdCardContent: any;
+  thirdCardContentError: boolean = false;
+
   constructor(private service: RestApiService) {}
 
   ngOnInit(): void {
@@ -32,13 +36,13 @@ export class HomeFirstComponentComponent implements OnInit {
       .subscribe({
         next: (response) => {
           this.firstCardContent = response;
-          this.firstCardContentLoaded = true
+          this.firstCardContentLoaded = true;
         },
         error: (error) => {
           this.firstCardContentError = true;
           this.firstCardContentLoaded = true;
         },
-        complete: () => console.log('getFirstComponentCardOne completed'),
+        complete: () => {},
       });
   }
   getFirstComponentCardTwo() {
@@ -48,17 +52,30 @@ export class HomeFirstComponentComponent implements OnInit {
       .subscribe({
         next: (response) => {
           this.secondCardContent = response;
+          this.secondCardContentLoaded = true;
         },
         error: (error) => {
           this.secondCardContentError = true;
+          this.secondCardContentLoaded = true;
         },
-        complete: ()=> console.log('getFirstComponentCardTwo completed')
+        complete: () => {},
       });
   }
   getFirstComponentCardThree() {
-    this.service.getFirstComponentCardThree().subscribe((response) => {
-      this.thirdCardContent = response;
-    });
+    this.service
+      .getFirstComponentCardThree()
+      .pipe(retry(3))
+      .subscribe({
+        next: (response) => {
+          this.thirdCardContent = response;
+          this.thirdCardContentLoaded = true;
+        },
+        error: (error) => {
+          this.thirdCardContentError = true;
+          this.thirdCardContentLoaded = true;
+        },
+        complete: () => {},
+      });
   }
   // onResize(event: any) {
   //   this.breakpoint = event.target.innerWidth <= 700 ? 1 : 3;
