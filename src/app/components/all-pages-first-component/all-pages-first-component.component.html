@@ -1,5 +1,11 @@
 <div class="all-pages-card-container">
-  <mat-card
+  <mat-card *ngFor="let data of cardContent">
+    <img src="{{ data.src }}" alt="{{ data.title }}" mat-card-image />
+    <mat-card-subtitle>{{ cardSubtitle }}</mat-card-subtitle>
+    <mat-card-title>{{ data.title }}</mat-card-title>
+  </mat-card>
+
+  <!-- <mat-card
     ><img
       src="../../../assets/images/KentuckyBuck.jpg"
       mat-card-image
@@ -15,5 +21,5 @@
     <img src="../../../assets/images/ManhattanVsOld.jpg" mat-card-image />
     <mat-card-subtitle>{{ cardSubtitle }}</mat-card-subtitle>
     <mat-card-title>Manhattan Vs. Old</mat-card-title>
-  </mat-card>
+  </mat-card> -->
 </div>

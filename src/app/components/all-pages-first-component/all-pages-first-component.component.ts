@@ -7,6 +7,8 @@ import { Router } from '@angular/router';
 })
 export class AllPagesFirstComponentComponent implements OnInit {
   @Input() cardSubtitle?: string;
+  @Input() cardContent: any;
+  @Input() cardContentError: any;
   constructor(private router: Router) {}
 
   ngOnInit(): void {

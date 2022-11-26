@@ -27,7 +27,8 @@ import { AllPagesThirdComponentComponent } from './components/all-pages-third-co
 
 import { HttpClientModule } from '@angular/common/http';
 import { ErrorCardComponent } from './components/error-card/error-card.component';
-import { LoadingCardComponent } from './components/loading-card/loading-card.component'
+import { LoadingCardComponent } from './components/loading-card/loading-card.component';
+
 @NgModule({
   declarations: [
     AppComponent,

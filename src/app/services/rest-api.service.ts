@@ -25,4 +25,8 @@ export class RestApiService {
   getBourbonCard() {
     return this.http.get('http://localhost:3000/BourbonCard');
   }
+  // For "Brandy page"
+  getBrandyCard() {
+    return this.http.get('http://localhost:3000/BrandyCard');
+  }
 }

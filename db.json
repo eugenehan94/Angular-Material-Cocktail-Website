@@ -89,11 +89,28 @@
       "id": "2",
       "src": "../../../assets/images/LeftHand.jpg",
       "title": "Left Hand"
-    }, 
+    },
     {
       "id": "3",
       "src": "../../../assets/images/ManhattanVsOld.jpg",
       "title": "Manhattan Vs. Old"
+    }
+  ],
+  "BrandyCard": [
+    {
+      "id": "1",
+      "src": "../../../assets/images/ManhattanVsOld.jpg",
+      "title": "Manhattan Vs. Old"
+    },
+    {
+      "id": "2",
+      "src": "../../../assets/images/LeftHand.jpg",
+      "title": "Left Hand"
+    },
+    {
+      "id": "3",
+      "src": "../../../assets/images/KentuckyBuck.jpg",
+      "title": "Kentucky Buck"
     }
   ]
 }
