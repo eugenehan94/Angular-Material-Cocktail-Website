@@ -78,5 +78,22 @@
       "subtitle": "COGNAC",
       "title": "Pumpkin Buck"
     }
+  ],
+  "BourbonCard": [
+    {
+      "id": "1",
+      "src": "../../../assets/images/KentuckyBuck.jpg",
+      "title": "Kentucky Buck"
+    },
+    {
+      "id": "2",
+      "src": "../../../assets/images/LeftHand.jpg",
+      "title": "Left Hand"
+    }, 
+    {
+      "id": "3",
+      "src": "../../../assets/images/ManhattanVsOld.jpg",
+      "title": "Manhattan Vs. Old"
+    }
   ]
 }

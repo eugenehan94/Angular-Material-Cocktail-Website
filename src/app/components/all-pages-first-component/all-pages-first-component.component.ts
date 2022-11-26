@@ -6,7 +6,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./all-pages-first-component.component.css'],
 })
 export class AllPagesFirstComponentComponent implements OnInit {
-  @Input() cardTitle?: string;
+  @Input() cardSubtitle?: string;
   constructor(private router: Router) {}
 
   ngOnInit(): void {
@@ -14,6 +14,6 @@ export class AllPagesFirstComponentComponent implements OnInit {
     // const routerUrl = this.router.url.substring(1).replace(/%20/, ' ');
     // then capitalize the first letter and attach the rest
     // const title = routerUrl.charAt(0).toUpperCase() + routerUrl.slice(1);
-    this.cardTitle = this.cardTitle?.toUpperCase();
+    this.cardSubtitle = this.cardSubtitle?.toUpperCase();
   }
 }

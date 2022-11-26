@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 export class AllPagesHeroComponent implements OnInit {
 
   @Input() title?: string;
-
+  @Input() description?: string;
   constructor(private router: Router) {}
 
   ngOnInit(): void {
