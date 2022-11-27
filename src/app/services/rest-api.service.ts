@@ -25,8 +25,37 @@ export class RestApiService {
   getBourbonCard() {
     return this.http.get('http://localhost:3000/BourbonCard');
   }
+  getBourbonTiles() {
+    return this.http.get('http://localhost:3000/BourbonTiles');
+  }
   // For "Brandy page"
   getBrandyCard() {
     return this.http.get('http://localhost:3000/BrandyCard');
+  }
+  getBrandyTile() {
+    return this.http.get('http://localhost:3000/BrandyTiles');
+  }
+  // For "Gin" page
+  getGinCard() {
+    return this.http.get('http://localhost:3000/GinCard');
+  }
+  getGinTile() {
+    return this.http.get('http://localhost:3000/GinTiles');
+  }
+  // For "Liqueur" page
+  getLiqueurCard() {
+    return this.http.get(' http://localhost:3000/LiqueurCard');
+  }
+  // For "Rum" page
+  getRumCard() {
+    return this.http.get('http://localhost:3000/RumCard');
+  }
+  // For "Rye Whiskey" page
+  getRyeWhiskeyCard() {
+    return this.http.get('http://localhost:3000/RyeWhiskeyCard');
+  }
+  // For "Scotch" page
+  getScotchCard() {
+    return this.http.get('http://localhost:3000/ScotchCard');
   }
 }

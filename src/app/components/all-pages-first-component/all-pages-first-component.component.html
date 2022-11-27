@@ -1,25 +1,21 @@
-<div class="all-pages-card-container">
-  <mat-card *ngFor="let data of cardContent">
-    <img src="{{ data.src }}" alt="{{ data.title }}" mat-card-image />
-    <mat-card-subtitle>{{ cardSubtitle }}</mat-card-subtitle>
-    <mat-card-title>{{ data.title }}</mat-card-title>
-  </mat-card>
-
-  <!-- <mat-card
-    ><img
-      src="../../../assets/images/KentuckyBuck.jpg"
-      mat-card-image
-    /><mat-card-subtitle>{{ cardSubtitle }}</mat-card-subtitle
-    ><mat-card-title>Kentucky Buck</mat-card-title></mat-card
+<div class="all-page-container">
+  <div *ngIf="!cardContentLoaded">
+    <app-loading-card></app-loading-card>
+  </div>
+  <div
+    class="all-pages-card-wrapper"
+    *ngIf="!cardContentError && cardContentLoaded"
   >
-  <mat-card>
-    <img src="../../../assets/images/LeftHand.jpg" mat-card-image />
-    <mat-card-subtitle>{{ cardSubtitle }}</mat-card-subtitle
-    ><mat-card-title>Left Hand</mat-card-title>
-  </mat-card>
-  <mat-card>
-    <img src="../../../assets/images/ManhattanVsOld.jpg" mat-card-image />
-    <mat-card-subtitle>{{ cardSubtitle }}</mat-card-subtitle>
-    <mat-card-title>Manhattan Vs. Old</mat-card-title>
-  </mat-card> -->
+    <mat-card *ngFor="let data of cardContent">
+      <img src="{{ data.src }}" alt="{{ data.title }}" mat-card-image />
+      <mat-card-subtitle>{{ cardSubtitle }}</mat-card-subtitle>
+      <mat-card-title>{{ data.title }}</mat-card-title>
+    </mat-card>
+  </div>
+  <div
+    class="all-pages-error-wrapper"
+    *ngIf="cardContentError && cardContentLoaded"
+  >
+    <app-error-card></app-error-card>
+  </div>
 </div>

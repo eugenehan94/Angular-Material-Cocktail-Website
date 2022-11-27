@@ -9,6 +9,7 @@ export class AllPagesFirstComponentComponent implements OnInit {
   @Input() cardSubtitle?: string;
   @Input() cardContent: any;
   @Input() cardContentError: any;
+  @Input() cardContentLoaded?: boolean;
   constructor(private router: Router) {}
 
   ngOnInit(): void {
@@ -17,5 +18,6 @@ export class AllPagesFirstComponentComponent implements OnInit {
     // then capitalize the first letter and attach the rest
     // const title = routerUrl.charAt(0).toUpperCase() + routerUrl.slice(1);
     this.cardSubtitle = this.cardSubtitle?.toUpperCase();
+ 
   }
 }

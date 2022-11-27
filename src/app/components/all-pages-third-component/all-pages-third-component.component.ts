@@ -1,4 +1,4 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, OnInit, HostListener, Input } from '@angular/core';
 import { Router } from '@angular/router';
 @Component({
   selector: 'app-all-pages-third-component',
@@ -8,6 +8,10 @@ import { Router } from '@angular/router';
 export class AllPagesThirdComponentComponent implements OnInit {
   getScreenWidth: any;
   cardTitle?: string;
+
+  @Input() tileContent: any;
+  @Input() tileContentLoaded?: boolean;
+  @Input() tileContentError?: boolean;
 
   constructor(private router: Router) {}
 

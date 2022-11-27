@@ -1,5 +1,13 @@
-<app-all-pages-hero [title]="pageTitle" [description]="pageDescription"></app-all-pages-hero>
-<app-all-pages-first-component [cardSubtitle]="pageTitle"></app-all-pages-first-component>
+<app-all-pages-hero
+  [title]="pageTitle"
+  [description]="pageDescription"
+></app-all-pages-hero>
+<app-all-pages-first-component
+  [cardSubtitle]="pageTitle"
+  [cardContent]="cardContent"
+  [cardContentError]="cardContentError"
+  [cardContentLoaded]="cardContentLoaded"
+></app-all-pages-first-component>
 <app-all-pages-second-component></app-all-pages-second-component>
 <app-all-pages-third-component></app-all-pages-third-component>
 <app-footer></app-footer>
