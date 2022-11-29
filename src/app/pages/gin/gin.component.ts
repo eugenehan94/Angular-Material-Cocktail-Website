@@ -20,6 +20,7 @@ export class GinComponent implements OnInit {
 
   ngOnInit(): void {
     this.getGinCard();
+    this.getGinTile();
   }
 
   getGinCard() {
@@ -38,8 +39,18 @@ export class GinComponent implements OnInit {
       });
   }
   getGinTile() {
-    this.service.getGinTile().pipe(retry(3)).subscribe({
-      
-    })
+    this.service
+      .getGinTile()
+      .pipe(retry(3))
+      .subscribe({
+        next: (response) => {
+          this.tileContent = response;
+          this.tileContentError = true;
+        },
+        error: (error) => {
+          this.tileContentError = true;
+          this.tileContentLoaded = true;
+        },
+      });
   }
 }

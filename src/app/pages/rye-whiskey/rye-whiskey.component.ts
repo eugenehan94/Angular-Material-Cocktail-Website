@@ -14,10 +14,15 @@ export class RyeWhiskeyComponent implements OnInit {
   cardContent: any;
   cardContentLoaded: boolean = false;
   cardContentError: boolean = false;
+
+  tileContent: any;
+  tileContentLoaded: boolean = false;
+  tileContentError: boolean = false;
   constructor(private service: RestApiService) {}
 
   ngOnInit(): void {
     this.getRyeWhiskeyCard();
+    this.getRyeWhiskeyTile();
   }
   getRyeWhiskeyCard() {
     this.service
@@ -31,6 +36,21 @@ export class RyeWhiskeyComponent implements OnInit {
         error: (error) => {
           this.cardContentError = true;
           this.cardContentLoaded = true;
+        },
+      });
+  }
+  getRyeWhiskeyTile() {
+    this.service
+      .getRyeWhiskeyTile()
+      .pipe(retry(3))
+      .subscribe({
+        next: (response) => {
+          this.tileContent = response;
+          this.tileContentLoaded = true;
+        },
+        error: (error) => {
+          this.tileContentError = true;
+          this.tileContentLoaded = true;
         },
       });
   }

@@ -15,22 +15,44 @@ export class ScotchComponent implements OnInit {
   cardContent: any;
   cardContentLoaded: boolean = false;
   cardContentError: boolean = false;
-    constructor(private service: RestApiService) {}
+  tileContent: any;
+  tileContentLoaded: boolean = false;
+  tileContentError: boolean = false;
+  constructor(private service: RestApiService) {}
 
   ngOnInit(): void {
     this.getScotchCard();
+    this.getScotchTile();
   }
 
   getScotchCard() {
-    this.service.getScotchCard().pipe(retry(3)).subscribe({
-      next: (response) => {
-        this.cardContent = response;
-        this.cardContentLoaded = true;
-      },
-      error: (error) => {
-        this.cardContentError = true;
-        this.cardContentLoaded = true;
-      }
-    })
+    this.service
+      .getScotchCard()
+      .pipe(retry(3))
+      .subscribe({
+        next: (response) => {
+          this.cardContent = response;
+          this.cardContentLoaded = true;
+        },
+        error: (error) => {
+          this.cardContentError = true;
+          this.cardContentLoaded = true;
+        },
+      });
+  }
+  getScotchTile() {
+    this.service
+      .getScotchTile()
+      .pipe(retry(3))
+      .subscribe({
+        next: (response) => {
+          this.tileContent = response;
+          this.tileContentLoaded = true;
+        },
+        error: (error) => {
+          this.tileContentError = true;
+          this.tileContentLoaded = true;
+        },
+      });
   }
 }

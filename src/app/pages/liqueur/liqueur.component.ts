@@ -14,10 +14,15 @@ export class LiqueurComponent implements OnInit {
   cardContent: any;
   cardContentLoaded: boolean = false;
   cardContentError: boolean = false;
+
+  tileContent: any;
+  tileContentLoaded: boolean = false;
+  tileContentError: boolean = false;
   constructor(private service: RestApiService) {}
 
   ngOnInit(): void {
     this.getLiqueurCard();
+    this.getLiqueurTile();
   }
 
   getLiqueurCard() {
@@ -32,6 +37,21 @@ export class LiqueurComponent implements OnInit {
         error: (error) => {
           this.cardContentError = true;
           this.cardContentLoaded = true;
+        },
+      });
+  }
+  getLiqueurTile() {
+    this.service
+      .getLiqueurTile()
+      .pipe(retry(3))
+      .subscribe({
+        next: (response) => {
+          this.tileContent = response;
+          this.tileContentLoaded = true;
+        },
+        error: (error) => {
+          this.tileContentError = true;
+          this.tileContentLoaded = true;
         },
       });
   }

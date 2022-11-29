@@ -14,10 +14,15 @@ export class RumComponent implements OnInit {
   cardContent: any;
   cardContentLoaded: boolean = false;
   cardContentError: boolean = false;
+
+  tileContent: any;
+  tileContentLoaded: boolean = false;
+  tileContentError: boolean = false;
   constructor(private service: RestApiService) {}
 
   ngOnInit(): void {
     this.getRumCard();
+    this.getRumTile();
   }
 
   getRumCard() {
@@ -34,5 +39,17 @@ export class RumComponent implements OnInit {
           this.cardContentLoaded = true;
         },
       });
+  }
+  getRumTile() {
+    this.service.getRumTile().pipe(retry(3)).subscribe({
+      next: (response) => {
+        this.tileContent = response;
+        this.tileContentLoaded = true;
+      },
+      error: (error) => {
+        this.tileContentError = true;
+        this.tileContentLoaded = true;
+      }
+    })
   }
 }
