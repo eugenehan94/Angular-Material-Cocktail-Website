@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, EventEmitter, Output } from '@angular/core';
+import { Component, OnInit, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-sidenav-content',
@@ -7,6 +7,7 @@ import { Component, Input, OnInit, EventEmitter, Output } from '@angular/core';
 })
 export class SidenavContentComponent implements OnInit {
 
+  // the @Output sends the value to the parent component. Refer to "app.component.ts"
   @Output() closeSidenav = new EventEmitter<boolean>();
   constructor() {}
 
