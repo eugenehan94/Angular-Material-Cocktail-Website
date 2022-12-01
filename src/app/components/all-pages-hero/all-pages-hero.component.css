@@ -20,3 +20,7 @@
 .all-pages-hero-intro p {
   text-align: center;
 }
+
+mat-icon {
+  color: #a45241;
+}

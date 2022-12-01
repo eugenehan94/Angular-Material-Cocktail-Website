@@ -1,7 +1,9 @@
 <div class="all-page-container">
+  <!-- This is the loading state -->
   <div *ngIf="!cardContentLoaded">
     <app-loading-card></app-loading-card>
   </div>
+  
   <div
     class="all-pages-card-wrapper"
     *ngIf="!cardContentError && cardContentLoaded"
@@ -12,6 +14,8 @@
       <mat-card-title>{{ data.title }}</mat-card-title>
     </mat-card>
   </div>
+  
+  <!-- This is the error state -->
   <div
     class="all-pages-error-wrapper"
     *ngIf="cardContentError && cardContentLoaded"
