@@ -43,12 +43,17 @@ mat-icon {
 }
 .footer-lower-container {
   display: flex;
+  flex-direction: column;
 }
 .footer-lower-container div {
   flex: 1;
 }
-.footer-lower-container .warning {
-  color: red;
+.footer-lower-left-image-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.footer-lower-container p {
+  text-align: center;
 }
 .footer-personal-link {
   text-decoration: underline;
@@ -97,15 +102,15 @@ mat-icon {
   .footer-lower-container div {
     flex: none;
   }
-  .footer-lower-container p {
+  /* .footer-lower-container p {
     text-align: center;
-  }
+  } */
   .footer-lower-left-wrapper {
     display: flex;
     flex-direction: column;
   }
-  .footer-lower-left-image-wrapper {
+  /* .footer-lower-left-image-wrapper {
     display: flex;
     justify-content: center;
-  }
+  } */
 }

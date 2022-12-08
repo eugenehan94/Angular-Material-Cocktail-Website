@@ -28,6 +28,7 @@ import { AllPagesThirdComponentComponent } from './components/all-pages-third-co
 import { HttpClientModule } from '@angular/common/http';
 import { ErrorCardComponent } from './components/error-card/error-card.component';
 import { LoadingCardComponent } from './components/loading-card/loading-card.component';
+import { DialogContentOnLoadComponent } from './components/dialog-content-on-load/dialog-content-on-load.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +53,8 @@ import { LoadingCardComponent } from './components/loading-card/loading-card.com
     AllPagesSecondComponentComponent,
     AllPagesThirdComponentComponent,
     ErrorCardComponent,
-    LoadingCardComponent 
+    LoadingCardComponent,
+    DialogContentOnLoadComponent 
   ],
   imports: [
     BrowserModule,
