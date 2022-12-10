@@ -1,0 +1,9 @@
+.cookie-message-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    background: #ebebeb;
+    padding: 12px 20px 12px 25px;
+}

@@ -29,6 +29,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ErrorCardComponent } from './components/error-card/error-card.component';
 import { LoadingCardComponent } from './components/loading-card/loading-card.component';
 import { DialogContentOnLoadComponent } from './components/dialog-content-on-load/dialog-content-on-load.component';
+import { CookieMessageComponent } from './components/cookie-message/cookie-message.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +55,8 @@ import { DialogContentOnLoadComponent } from './components/dialog-content-on-loa
     AllPagesThirdComponentComponent,
     ErrorCardComponent,
     LoadingCardComponent,
-    DialogContentOnLoadComponent 
+    DialogContentOnLoadComponent,
+    CookieMessageComponent 
   ],
   imports: [
     BrowserModule,

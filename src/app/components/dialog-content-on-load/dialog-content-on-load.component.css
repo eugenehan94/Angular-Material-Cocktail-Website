@@ -1,0 +1,7 @@
+.dialog-content-onload-title {
+    text-align: center;
+}
+.dialog-content-onload-button-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
