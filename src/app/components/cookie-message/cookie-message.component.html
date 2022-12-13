@@ -1,4 +1,4 @@
-<div class="cookie-message-container">
+<div class="cookie-message-container" *ngIf="!hasCookieMessageShown && cookieMessageOpen">
   <p>
     <b>We use cookies and similar technologies to improve user experience, and
     analyse activities and performance.</b> To the extent information collected is
@@ -9,5 +9,5 @@
     Ontario M5E 0C7 or foi.privacy@cocktail.com. For more information, please see
     our Privacy Policy.
   </p>
-  <button mat-flat-button color="primary">Close</button>
+  <button mat-flat-button color="primary" (click)="closeCookieMessage()">Close</button>
 </div>

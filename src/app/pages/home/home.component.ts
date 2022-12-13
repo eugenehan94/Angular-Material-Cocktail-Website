@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MatDialog, MatDialogRef } from '@angular/material/dialog';
+import { MatDialog } from '@angular/material/dialog';
 import { DialogContentOnLoadComponent } from 'src/app/components/dialog-content-on-load/dialog-content-on-load.component';
 @Component({
   selector: 'app-home',
@@ -11,27 +11,32 @@ export class HomeComponent implements OnInit {
   constructor(public dialog: MatDialog) {}
 
   ngOnInit(): void {
-    // if (!this.hasInitialModalShown) {
-    //   this.openDialog('1ms', '1ms');
-    //   this.hasInitialModalShown = true
-    //   this.setData(this.hasInitialModalShown)
-    // }
-
-    this.openDialog();
+    // The dialog only shows once when user visits the site.
+    if (!this.hasInitialModalShown) {
+      this.openDialog();
+      this.hasInitialModalShown = true
+      this.setData(this.hasInitialModalShown)
+    }
+    // NOTE: Comment out "If(!this.hasInitialModalShown") and uncomment below to 
+    // have modal to show everytime
+    // this.openDialog();
   }
 
   openDialog(): void {
     this.dialog.open(DialogContentOnLoadComponent, {
       width: '500px',
-      // "disableClose" prevents close when click in the background
+      // NOTE: "disableClose" prevents close when click in the background
       disableClose: true
     });
   }
 
-  setData(data: any) {
+  // Set the result in localStorage
+  setData(data: any): void {
     const jsonData = JSON.stringify(data);
     localStorage.setItem('hasInitialModalShown', jsonData)
   }
+
+  // Get the result from localStorage
   getData() {
     return localStorage.getItem('hasInitialModalShown')
   }
