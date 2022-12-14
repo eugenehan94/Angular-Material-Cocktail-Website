@@ -1,0 +1,7 @@
+button {
+    bottom: 0;
+    cursor: pointer;
+    margin: 0 8px 12px 0;
+    position: fixed;
+    right: 0;
+}

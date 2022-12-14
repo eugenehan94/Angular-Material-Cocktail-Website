@@ -30,6 +30,7 @@ import { ErrorCardComponent } from './components/error-card/error-card.component
 import { LoadingCardComponent } from './components/loading-card/loading-card.component';
 import { DialogContentOnLoadComponent } from './components/dialog-content-on-load/dialog-content-on-load.component';
 import { CookieMessageComponent } from './components/cookie-message/cookie-message.component';
+import { ScrollToTopBtnComponent } from './components/scroll-to-top-btn/scroll-to-top-btn.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +57,8 @@ import { CookieMessageComponent } from './components/cookie-message/cookie-messa
     ErrorCardComponent,
     LoadingCardComponent,
     DialogContentOnLoadComponent,
-    CookieMessageComponent 
+    CookieMessageComponent,
+    ScrollToTopBtnComponent 
   ],
   imports: [
     BrowserModule,

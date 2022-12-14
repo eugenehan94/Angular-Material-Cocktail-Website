@@ -2,7 +2,9 @@
     display: flex;
     justify-content: space-between;
 }
-
+.navbar-title:hover {
+    cursor: pointer
+}
 
 /* Angular Material css*/
 
