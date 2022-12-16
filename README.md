@@ -8,6 +8,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## One-time Cookie Message
 ![CookieMessageGif](https://user-images.githubusercontent.com/59939048/208014661-e20b14d9-3776-4d94-876f-223ddc0bc309.gif)
 
+## Sidenav View
+![SideMenuViewGif](https://user-images.githubusercontent.com/59939048/208014803-aa7ac12b-973a-49d9-bb52-13824f6787bb.gif)
 
 
 ## Development server
