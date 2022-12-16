@@ -14,6 +14,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Homepage View
 ![HomePageViewGif](https://user-images.githubusercontent.com/59939048/208016202-d8dd1b96-87cf-4825-844d-a42be1dcc6f7.gif)
 
+## Beverage View
+![BeveragePageGif](https://user-images.githubusercontent.com/59939048/208017701-29fc32ee-1c6c-4420-bb86-82bda2b9a4db.gif)
+
 
 ## Development server
 
