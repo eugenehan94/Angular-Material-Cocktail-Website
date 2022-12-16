@@ -11,6 +11,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Sidenav View
 ![SideMenuViewGif](https://user-images.githubusercontent.com/59939048/208014803-aa7ac12b-973a-49d9-bb52-13824f6787bb.gif)
 
+## Homepage View
+![HomePageViewGif](https://user-images.githubusercontent.com/59939048/208016202-d8dd1b96-87cf-4825-844d-a42be1dcc6f7.gif)
+
 
 ## Development server
 
