@@ -5,8 +5,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## One-time Popup Dialog Box
 ![PopupMessageOneTime](https://user-images.githubusercontent.com/59939048/207766251-72671176-a31a-4e10-b3d7-d491837d72bd.gif)
 
+## One-time Cookie Message
+![CookieMessageGif](https://user-images.githubusercontent.com/59939048/208014661-e20b14d9-3776-4d94-876f-223ddc0bc309.gif)
 
-===================================================================================================================
+
 
 ## Development server
 
