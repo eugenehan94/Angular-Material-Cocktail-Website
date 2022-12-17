@@ -24,3 +24,5 @@ With Angular Material and Json Server.
 ## Mobile View: Beverage View
 ![MobileBeverageViewGif](https://user-images.githubusercontent.com/59939048/208267103-d3e1c9e7-98d5-4a42-be32-72634767036b.gif)
 
+### To Run Project
+On local run "npm start" then on another terminal run "json-server --watch db.json"
