@@ -26,5 +26,6 @@ With Angular Material and Json Server.
 ![MobileBeverageViewGif](https://user-images.githubusercontent.com/59939048/208267103-d3e1c9e7-98d5-4a42-be32-72634767036b.gif)
 
 ### To Run Project
-Once you've cloned the project, run "npm install" to get all dependencies. Then,
-on local run "npm start" then on another terminal run "json-server --watch db.json"
+Once you've cloned the project, run "npm install" to get all dependencies. 
+
+Then, on local run "npm start" then on another terminal run "json-server --watch db.json" Make sure both are running.
